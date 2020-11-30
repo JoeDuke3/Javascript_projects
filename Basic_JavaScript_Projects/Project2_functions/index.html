@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poor Kenny</title>
+
+    <style>
+        body {
+            display: grid;
+            height: 100vh;
+            place-content: center;
+            background-image: radial-gradient(#fff, #000);
+        }
+
+        button {
+            font-size: 2rem;
+            padding: 1rem;
+            border-radius: 50%;
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+        }
+
+        button:hover {
+            cursor: pointer;
+            filter: invert(100%);
+        }
+
+        h1 {
+            color: #f00;
+            font-size: 5rem;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <button onclick="kylesAnswer()">Kill Kenny</button>
+
+    <h1 id="kyle"></h1>
+
+    <script src="JS/main.js"></script>
+</body>
+</html>
