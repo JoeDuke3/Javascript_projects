@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functioning Gross</title>
+    <style>
+        body {
+            display: grid;
+            place-content: center;
+            background-color: #666;
+            color: #ccc;
+            text-shadow: 3px 3px 3px #333;
+        }
+        p {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 3.33rem;
+            text-align: center;
+        }
+        p:hover {
+            filter: invert(100%);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Within the <body> element, create a paragraph element with the id “Math” and give it an event handler to call the JavaScript function you are about to create. -->
+
+    <p id="Math" onmouseover="this.innerHTML = addThreeThrees()">III</p>
+
+    <script src="JS/main.js">
+    </script>
+</body>
+</html>
