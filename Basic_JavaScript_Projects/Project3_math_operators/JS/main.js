@@ -1,38 +1,55 @@
-// Within the <body> element, create a paragraph element with the id “Math” and give it an event handler to call  		the JavaScript function you are about to create.
-function addThreeThrees() {
-    var threeCubed = 3 + 3 + 3;
-    return threeCubed;
+// Write a function using +
+
+function add() {
+    var sum = 1 + 2;
+    let addAnswer = "1 + 2 = " + sum;
+    document.getElementById('Math').innerHTML = addAnswer;
 }
 
-//Write a subtraction operation that displays the result. Save the file.
+// Write a function using -
 
+function subtract() {
+    var difference = 8 - 3;
+    let subtractAnswer = "8 - 3 = " + difference;
+    document.getElementById('Math').innerHTML = subtractAnswer;
+}
 
+// Write a function using *
 
-//Write a multiplication operation and a division operation and display the results of both
+function multiply() {
+    var total = 2 * 3;
+    let multiplyAnswer = "2 * 3 = " + total;
+    document.getElementById('Math').innerHTML = multiplyAnswer;
+}
 
+// Write a function using %
 
+function remainder() {
+    var remaining = 27 % 7;
+    let remainingAnswer = "When 27 is divided by 7 the remainder is " + remaining 
+    document.getElementById('Math').innerHTML = remainingAnswer;
+}
 
-//Write multiple mathematical operations (+, -, *, /) and display the results. Save the file.
+// Write a function using ++
 
+function increment() {
+    let someNumber = 8;
+    someNumber++
+    incrementAnswer = "8 incremented by one = " + someNumber;
+    document.getElementById('Math').innerHTML = incrementAnswer;
+}
 
+// Write a function using --
 
-//Utilize the modulus operator (%) and display the results. Save the file.
+function decrement() {
+    let someNumber = 11;
+    someNumber--;
+    decrementAnswer = "11 decremented by one = " + someNumber;
+    document.getElementById('Math').innerHTML = decrementAnswer;
+}
 
+// Write a function using Math.random()
 
-
-//Utilize the negation operator (-) and display the results. Save the file.
-
-
-
-//Utilize the increment operator and the decrement operator, and display the result of each.
-
-
-
-//Utilize the Math.random() function. Save the file.
-
-
-
-//utilize a Math object method and display its result.
-
-
-
+function randomNumber() {
+    document.getElementById('Math').innerHTML = Math.random() * 333;
+}
