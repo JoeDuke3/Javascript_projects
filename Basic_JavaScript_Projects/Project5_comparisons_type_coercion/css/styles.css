@@ -1,0 +1,47 @@
+h3 {
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: #fed;
+    margin: 3.33rem;
+    padding: .3rem;
+    border: 3px groove #333;
+    outline: 33px solid rgba(3, 3, 3, .3);
+}
+
+#coercion {
+    font-size: 3.33rem;
+}
+
+#true, 
+#false {
+    color: red;
+}
+
+#id, 
+#ID {
+    color: green;
+}
+
+#isItTrue, 
+#isItFalse {
+    color: blue;
+}
+
+#tripleEquals3,
+#tripleEquals33,
+#tripleEquals333,
+#tripleEquals3333 {
+    color: cyan;
+}
+
+#AND, 
+#OR, 
+#and, 
+#or {
+    color: magenta;
+}
+
+#isNot, 
+#isntNot {
+    color: yellow;
+}
