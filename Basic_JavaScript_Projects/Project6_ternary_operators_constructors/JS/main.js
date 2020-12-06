@@ -47,8 +47,8 @@ function myFunction() {                                                         
 
                     // Successfully run index.html in the browser.
 
-function paidOff() {
-    document.getElementById("New_and_This").innerHTML = 
+function paidOff() {                                                                        // Declare and name a function.
+    document.getElementById("New_and_This").innerHTML =                                     // The function passes some concatenated strings and values to an HTML element.
     "My favorite transportation is a pair of " + Joe.Vehicle_Color + " " + 
     Joe.Vehicle_Make + " " + Joe.Vehicle_Model + " that I got in " + 
     Joe.Vehicle_Year + ".";
@@ -58,9 +58,9 @@ function paidOff() {
                     // Assign a variable the value of a reserved word. 
                     // Attempt to display this in the browser.
 
-// function do() {
-//     var class = abstract;
-//     getElementById("dontUse");
+// function extends(short, long) {
+//     var class = package;
+//     getElementById("goto")private + function + interface;
 // };
 
                     // Write an object constructor function.
@@ -73,7 +73,7 @@ function Dog(Breed, Color, Age, Personality) {                                  
 }
 var Matilda = new Dog("Chug", "Apricot/Fawn", 5, "playful");                                // Use 'new', which is tied to 'this' to create a new object.
 function theTomato() {                                                                      // Declare and name a funcion.
-    document.getElementById("Gooby").innerHTML =                                     // The function passes concatenated strings/values to an HTML element.
+    document.getElementById("Gooby").innerHTML =                                            // The function passes concatenated strings/values to an HTML element.
     "Matilda is an " + Matilda.Dog_Color + " " + Matilda.Dog_Breed + " who is very " + 
     Matilda.Dog_Personality + " at the age of " + Matilda.Dog_Age + " years old."
 }
@@ -82,29 +82,31 @@ function theTomato() {                                                          
                     // Write a nested function.
                     // Successfully execute index.html in the browser.
 
-// function Nested_Function() {
-//     document.getElementById("Countdown").innerHTML = 
-//     oneLessBottle();
-//     function oneLessBottle() {
-//         var bottlesOnWall = 100;
-//         oneLessBottle() {
-//             var bottlesOnWall - 1;
+function bottlesOnWall() {                                                                      // Declare and name a function.
+    document.getElementById('Wall').innerHTML =                                                 // The function passes a returned value to an HTML element.
+    takeOneDown() + " bottles of beer on the wall.";
+    function takeOneDown() {                                                                    // Declare and name a nested function.
+        bottlesLeft = 100;                                                                      // The function sets a number value to a variable.
+        function passItAround() {                                                               // Declare and name a nested function.
+            bottlesLeft -= 1;                                                      // The function decreases the parent function variable by one.
+        }
+        passItAround();                                                                         // Call the most nested function.
+        return bottlesLeft                                                                      // Return the variable with a new value.
+    }
+}
+
+// do {
+//     function bottlesOnWall() {
+//         document.getElementById('Wall').innerHTML = 
+//         takeOneDown() + " bottles of beer on the wall.";
+//         function takeOneDown() {
+//             bottlesLeft = 100;
+//             function passItAround() {
+//                 bottlesLeft -= 1;
+//             }
+//             passItAround();
+//             return bottlesLeft
 //         }
 //     }
 // }
-
-var bottlesOnWall = (function() {
-    var counter = 100;
-    return function() {counter -= 1; return counter}
-})(document.getElementById("Wall").innerHTML = counter + 
-" bottles of beer on the wall.");
-
-// function count_Function() {
-//     document.getElementById("Counting").innerHTML = Count();
-//         function Count() {
-//             var Starting_point = 9;
-//             function Plus_one(); {Starting_point += 1;}
-//             Plus_one();
-//             return Starting_point;
-//         }
-// }
+// while (bottlesLeft > 0);
