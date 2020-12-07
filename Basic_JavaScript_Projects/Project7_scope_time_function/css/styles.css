@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    color: #fed;
+}
+
+body > * {
+    margin-left: 1.44rem;
+}
+
+P {
+    display: inline-block;
+    cursor: pointer;
+}
+
+p:hover {
+    filter: invert(50%);
+}
+
+input[type="text"] {
+    margin-left: 0;
+}

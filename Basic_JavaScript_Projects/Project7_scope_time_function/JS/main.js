@@ -75,19 +75,35 @@ function Duh() {
 function negotiateOffer() {
     var offer = document.getElementById('offer').value;
     if (offer >= 100) {
+                    // Write the relevant document.getElementById() methods 
+                    // as covered in the previous course step.
         document.getElementById('answer').innerHTML = "You're on!";
-    }
+                }
     else {
+                    // Write the relevant document.getElementById() methods 
+                    // as covered in the previous course step.
         document.getElementById('answer').innerHTML = "Get outta here..."
     }
 }
 
-
-                    // Write the relevant document.getElementById() methods as covered in the previous course step.
-
                     // 5TH ASSIGNMENT
-                    // Write out all code from the previous course step and successfully execute it in the browser. 
-                    // Remember to add in the <script> element and reference your JavaScript file.
+                    // Write out all code from the previous course step 
+                    // and successfully execute it in the browser. 
+
+function Time_function() {
+    var Time = new Date().getHours();
+    var Reply;
+    if (Time < 12 == Time > 0) {
+        Reply = "It is morning time!";
+    }
+    else if (Time > 12 == Time < 18) {
+        Reply = "It is the afternoon";
+    }
+    else {
+        Reply = "It is evening time";
+    }
+    document.getElementById("Time_of_day").innerHTML = Reply;
+}
 
                     // ASSIGNMENT SUBMISSION
                     // Assign a local variable and a global variable

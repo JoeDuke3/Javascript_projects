@@ -2,67 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" 
+    content="width=device-width, 
+    initial-scale=1.0">
+    <link rel="stylesheet" 
+    href="./css/styles.css">
     <title>JS Project 7</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
 
-        body {
-            background-color: #333;
-            color: #fed;
-        }
-
-        body > * {
-            margin-left: 1.44rem;
-        }
-
-        P {
-            display: inline-block;
-            cursor: pointer;
-        }
-
-        p:hover {
-            filter: invert(50%);
-        }
-
-        input[type="text"] {
-            margin-left: 0;
-        }
-    </style>
 </head>
 <body>
 
+    <div class="Ass2">
                     <!-- 2ND ASSIGNMENT -->
                     <!-- Write an id attribute and an onclick attribute within a <p> element -->
                     <!-- with values of your own choosing -->
-
-    <p id="Alert" onclick="alarmClock()">Asleep</p>
-
+        <p id="Alert" onclick="alarmClock()">Asleep</p>
+    </div>
+    <div class="Ass3">
                     <!-- 3RD ASSIGNMENT -->
                     <!-- Successfully execute the index.html file in the browser. -->
-
-    <p id="isIt" onclick="Duh()">Well, is it?</p>
-
+        <p id="isIt" onclick="Duh()">Well, is it?</p>
+    </div>
+    <div class="Ass4">
                     <!-- 4TH ASSIGNMENT -->
                     <!-- Write a <p> element providing the user with instructions. -->
     <p>Type your offer into the box.</p>
-    <label for="offer">$</label>
-    <input type="text" id="offer" value="">
-    <input type="submit" value="Submit Offer" onclick="negotiateOffer()">
-    <p id="answer">...</p>
+        <label for="offer">$</label>
                     <!-- Write an <input> element that contains an id attribute. -->
-                    <!-- Write a <p> element that contains an id attribute. -->
+        <input type="text" id="offer" value="">
                     <!-- Write a <button> element  -->
-                    <!-- that contains an onclick attribute that references your JavaScript function. -->
-                    
+                    <!-- that contains an onclick attribute  -->
+                    <!-- that references your JavaScript function. -->
+                    <!-- <button onclick="negotiateOffer()">I dare you to push me</button> -->
+        <input type="submit" value="Submit Offer" onclick="negotiateOffer()">
+                    <!-- Write a <p> element that contains an id attribute. -->
+        <p id="answer">...</p>
+    </div>
+    <div class="Ass5">
                     <!-- 5TH ASSIGNMENT -->
                     <!-- Write out all code from the previous course step and successfully execute it in the browser.  -->
-                    <!-- Remember to add in the <script> element and reference your JavaScript file. -->
-                        
+    <button onclick="Time_function()">Click here to get the time.</button>
+    <p id="Time_of_day"></p>
+    </div>
                     <!-- 1ST ASSIGNMENT -->
                     <!-- Within the <head> or <body> element, write the following code: -->
+                    <!-- 5TH ASSIGNMENT -->
+                    <!-- Remember to add in the <script> element and reference your JavaScript file. -->
     <script src="JS/main.js"></script>
 </body>
 </html>
