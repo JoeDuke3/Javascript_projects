@@ -54,6 +54,13 @@ function alarmClock() {
 }
                     // Write out a document.getElementById() method as covered in the previous course step 
                     // and reference the id attribute in the HTML file.
+function Duh() {
+    var larger = 5;
+    var smaller =3;
+    if (larger > smaller) {
+        document.getElementById('isIt').innerHTML = "Of course it is!"
+    }
+}
 
 
 
