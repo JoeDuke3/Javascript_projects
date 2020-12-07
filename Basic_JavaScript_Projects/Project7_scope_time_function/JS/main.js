@@ -26,7 +26,6 @@ function err_2() {
     return z;
 }
 
-
 // and use console.log() method to debug it 
 // within the console in Chrome Dev Tools.
 
@@ -48,7 +47,11 @@ console.log(fix_z);
 
                     // 2ND ASSIGNMENT
                     // Write out a function with an if statement that utilizes the new Date().getHours() method
-                    
+function alarmClock() {
+    if (new Date().getHours() > 7) {
+        document.getElementById('Alert').innerHTML = "WAKE UP!!!";
+    }
+}
                     // Write out a document.getElementById() method as covered in the previous course step 
                     // and reference the id attribute in the HTML file.
 
