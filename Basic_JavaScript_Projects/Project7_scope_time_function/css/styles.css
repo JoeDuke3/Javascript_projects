@@ -13,13 +13,34 @@ body > * {
 
 P {
     display: inline-block;
+    font-size: 2rem;
+}
+
+#Alert:hover, 
+#isIt:hover {
+filter: invert(50%);
+cursor: pointer;
+}
+
+button:hover, 
+input[type="submit"]:hover {
     cursor: pointer;
 }
 
-p:hover {
-    filter: invert(50%);
+#answer, 
+#Time_of_day {
+    display: block;
+}
+
+label, input[type="submit"] {
+    margin-left: 1.44rem;
 }
 
 input[type="text"] {
     margin-left: 0;
+}
+
+input, button, label {
+    font-size: 1.44rem;
+    border-radius: 5px;
 }
