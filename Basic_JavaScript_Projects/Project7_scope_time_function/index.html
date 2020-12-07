@@ -26,6 +26,10 @@
         p:hover {
             filter: invert(50%);
         }
+
+        input[type="text"] {
+            margin-left: 0;
+        }
     </style>
 </head>
 <body>
@@ -43,6 +47,11 @@
 
                     <!-- 4TH ASSIGNMENT -->
                     <!-- Write a <p> element providing the user with instructions. -->
+    <p>Type your offer into the box.</p>
+    <label for="offer">$</label>
+    <input type="text" id="offer" value="">
+    <input type="submit" value="Submit Offer" onclick="negotiateOffer()">
+    <p id="answer">...</p>
                     <!-- Write an <input> element that contains an id attribute. -->
                     <!-- Write a <p> element that contains an id attribute. -->
                     <!-- Write a <button> element  -->

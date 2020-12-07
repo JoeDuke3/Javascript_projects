@@ -46,14 +46,21 @@ console.log(fix_z);
 
 
                     // 2ND ASSIGNMENT
-                    // Write out a function with an if statement that utilizes the new Date().getHours() method
+                    // Write out a function with an if statement 
+                    // that utilizes the new Date().getHours() method.
+
 function alarmClock() {
     if (new Date().getHours() > 7) {
+                    // Write out a document.getElementById() method 
+                    // as covered in the previous course step 
+                    // and reference the id attribute in the HTML file.
         document.getElementById('Alert').innerHTML = "WAKE UP!!!";
     }
 }
-                    // Write out a document.getElementById() method as covered in the previous course step 
-                    // and reference the id attribute in the HTML file.
+
+                    // 3RD ASSIGNMENT
+                    // Write your own if statement.
+
 function Duh() {
     var larger = 5;
     var smaller =3;
@@ -62,13 +69,20 @@ function Duh() {
     }
 }
 
-
-
-                    // 3RD ASSIGNMENT
-                    // Write your own if statement.
-
                     // 4TH ASSIGNMENT
                     // Write a function that includes an if statement and an else statement.
+
+function negotiateOffer() {
+    var offer = document.getElementById('offer').value;
+    if (offer >= 100) {
+        document.getElementById('answer').innerHTML = "You're on!";
+    }
+    else {
+        document.getElementById('answer').innerHTML = "Get outta here..."
+    }
+}
+
+
                     // Write the relevant document.getElementById() methods as covered in the previous course step.
 
                     // 5TH ASSIGNMENT
