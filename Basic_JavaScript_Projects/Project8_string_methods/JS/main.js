@@ -41,3 +41,12 @@ function stringTheBeast() {
     var beast = 666;
     document.getElementById("strungBeast").innerHTML = beast.toString();
 }
+
+                    // 4TH ASSIGNMENT
+                    // Utilize the toPrecision() method to return 
+                    // a string as a number of a specified length.
+
+function shortenGross () {
+    var gross = 144.144144144144144;
+    document.getElementById("shortGross").innerHTML = gross.toPrecision(9);
+}
