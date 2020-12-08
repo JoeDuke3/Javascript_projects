@@ -50,3 +50,21 @@ function shortenGross () {
     var gross = 144.144144144144144;
     document.getElementById("shortGross").innerHTML = gross.toPrecision(9);
 }
+
+                    // 2ND CHALLENGE
+                    // Successfully write and execute 
+                    // the toFixed() method.
+
+function fixPi() {
+    var p = 3.14159;
+    document.getElementById("fixedPi").innerHTML = p.toFixed(2);
+}
+
+                    // 2ND CHALLENGE
+                    // Successfully write and execute 
+                    // the valueOf() method.
+
+function workForIt() {
+    var d = "A Dollar";
+    document.getElementById("valued").innerHTML = d.valueOf();
+}
