@@ -34,3 +34,10 @@ function findIt() {
     document.getElementById("Challenge1b").innerHTML = found;
 }
 
+                    // 3RD ASSIGNMENT
+                    // utilize the toString() method 
+                    // to return a number as a string.
+function stringTheBeast() {
+    var beast = 666;
+    document.getElementById("strungBeast").innerHTML = beast.toString();
+}
