@@ -1,3 +1,6 @@
+// THIS IS THE ORIGINAL COUNTDOWN CODE 
+// FROM THE COURSE MATERIAL
+
 // function countdown() {
 //     var seconds = document.getElementById("seconds").value;
 
@@ -12,15 +15,21 @@
 //     tick();
 // }
 
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
 // NEXT/PREVIOUS CONTROLS
 function plusSlides(n) {
-    showSlides(slideIndex += n);
+showSlides(slideIndex += n);
 }
 
 // THUMBNAIL IMAGE CONTROLS
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides");
