@@ -7,6 +7,11 @@ body {
     background-color: #666;
     padding: 3.33%;
 }
+
+button {
+    cursor: pointer;
+}
+
 /* SLIDESHOW CONTAINER */
 .slideshow-container {
     position: relative;
