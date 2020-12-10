@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: radial-gradient(#fed, #333);
+    background-repeat: no-repeat ;
+    background-size: cover;
+    color: #fed;
+    padding: 3.33rem;
+    text-align: center;
+}
+
+h1 {
+    color: #b00;
+    font-size: 3.33rem;
+    text-shadow: 3px 3px 0px #000;
+    margin-top: 11%;
+    margin-bottom: 66.6%;
+}
+
+button {
+    color: #60f;
+    font-size: 2.7rem;
+    font-weight: bold;
+    padding: .666rem;
+    margin: 3rem;
+    border-radius: 9px;
+    box-shadow: 3px 3px 0px #000;
+}
+
+button:hover {
+    filter: invert(100%);
+    border: thick solid #9f0;
+    outline: 42px solid rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+h1:hover {
+    filter:hue-rotate(180deg);
+    outline: 42px solid rgba(0,0,0,0.3)
+}
