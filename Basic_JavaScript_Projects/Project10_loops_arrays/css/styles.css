@@ -52,8 +52,14 @@ body,
     color: var(--Col1);
 }
 
+div {
+    padding: 1.44rem;
+    margin: 1.44rem;
+}
+
 .ass 
 .cha {
+    justify-items: space-between;
     flex-direction: row;
     padding: .333rem;
 }
@@ -64,4 +70,9 @@ button {
     margin: .333rem;
     border-radius: 9rem;
     outline: none;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: invert(100%);
 }

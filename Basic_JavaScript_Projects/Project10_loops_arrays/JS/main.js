@@ -26,7 +26,16 @@ function getLength() {
 // 2ND ASSIGNMENT
 // Write a for loop
 
+var Drums = ["Kick", "Snare", "Rack-Tom", "Floor-Tom", "Timpani", "Kettle", "Steel", "Bongo", "Oil", "Brake", "Ear"];
+var Kit = "";
+var D;
 
+function drumList() {
+    for(D = 0; D < Drums.length; D++) {
+        Kit += Drums[D] + "<br>";
+    }
+    document.getElementById("DrumKit").innerHTML = Kit;
+}
 
 // 3RD ASSIGNMENT
 // Write an array within a function to be called.
