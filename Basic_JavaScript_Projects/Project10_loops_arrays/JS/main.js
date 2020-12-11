@@ -2,15 +2,15 @@
 // Create a while loop.
 // THIS FUNCTION DISPLAYS A NEW LINE THAT ADDS
 // 3 TO THE PREVIOUS LINE
-    function Call_Loop() {
-        var n = "";
-        var c = 0;
-        while (c < 12) {
-            n += c * 3 + "<br>";
-            c++;
-        }
-        document.getElementById("Loop").innerHTML = n;
+function Call_Loop() {
+    var n = "";
+    var c = 0;
+    while (c < 12) {
+        n += c * 3 + "<br>";
+        c++;
     }
+    document.getElementById("Loop").innerHTML = n;
+}
 
 // 1ST CHALLENGE
 // Use the JavaScript string length property.
@@ -51,17 +51,28 @@ function powersOf3() {
     exponent[2] = 9;
     exponent[3] = 27;
     document.getElementById("3Cubed")
-    .innerHTML = "3 to power of 3 is " + exponent[3] + ".";
+    .innerHTML = "3 to power of 3 is " + exponent[3] + 
+    ".";
 }
 
 // 4TH ASSIGNMENT
 // Create an object through utilization of the const keyword.
-
 // Include Properties with values.
-
 // Create 'Constant_Function; to be called from HTML that will
 // display a string using 'getId"Constant" that includes
 // a property value(s) of the object.
+
+// const sideArm = {brand="Remington", type="1911", color="black", status="not loaded"};
+// function backUpPlan() {
+//     document.getElementById("pistol").innerHTML = "My Plan B is my " + sideArm.color + sideArm.brand + sideArm.type + ",don't worry, it's " + sideArm.status + ".";
+// }
+
+// function update() {
+//     sideArm.capacity = "9 rounds";
+//     sideArm.status = "loaded";
+//     document.getElementById("pistol").innerHTML = "Now it is " + sideArm.status + "with" + sideArm.capacity + "...";
+// }
+
 
 // Change a property's value
 
@@ -77,12 +88,34 @@ function powersOf3() {
 
 // 5TH ASSIGNMENT
 // Utilize the let keyword
+let F = 3;
+let B = 5;
 
+function letItBe() {
+    let F = 4;
+    let B = 6;
+    return F * B;
+}
+
+document.getElementById("block")
+.innerHTML = letItBe();
+
+document.getElementById("global")
+.innerHTML = F * B;
 
 
 // 2ND CHALLENGE
 // Use the JavaScript return statement.
 
+function makeGross() {
+    let G = 12 ** 2;
+    return G;
+}
+
+function displayGross() {
+    document.getElementById("gross")
+    .innerHTML = (makeGross());
+}
 
 
 // 6TH ASSIGNMENT

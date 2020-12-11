@@ -49,6 +49,7 @@ body,
 }
 
 #chaBox {
+    justify-content: space-around;
     background-color: var(--Col2);
     color: var(--Col1);
 }
@@ -61,11 +62,22 @@ div {
 .ass 
 .cha {
     align-content: space-between;
-    flex-direction: row;
+    flex-direction: column;
     padding: .333rem;
 }
 
-h1, h2, h2 {margin: .333rem}
+h1, h2, h3 {
+    margin: 3.33rem;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+h2 {
+    align-self: center;
+}
+
 button {
     padding: .333rem;
     margin: .333rem;
