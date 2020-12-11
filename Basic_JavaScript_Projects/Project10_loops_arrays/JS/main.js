@@ -14,8 +14,14 @@
 
 // 1ST CHALLENGE
 // Use the JavaScript string length property.
-
-
+function getLength() {
+    document.getElementById("ID1")
+    .innerHTML = "One is  " + "wn".length;
+    document.getElementById("ID2")
+    .innerHTML = "Two is " + "toow".length;
+    document.getElementById("ID3")
+    .innerHTML = "Three is " + "threey".length;
+}
 
 // 2ND ASSIGNMENT
 // Write a for loop

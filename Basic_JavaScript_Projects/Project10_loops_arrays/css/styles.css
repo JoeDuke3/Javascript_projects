@@ -1,10 +1,6 @@
 /* COMMON RESETS */
-*,
-::before, 
-::after {
+* {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
 }
 
 /* "MY" COLORS */
@@ -59,8 +55,13 @@ body,
 .ass 
 .cha {
     flex-direction: row;
+    padding: .333rem;
 }
 
-h1, h2, h2 {margin: .3rem}
-
-h3 {display: block}
+h1, h2, h2 {margin: .333rem}
+button {
+    padding: .333rem;
+    margin: .333rem;
+    border-radius: 9rem;
+    outline: none;
+}
