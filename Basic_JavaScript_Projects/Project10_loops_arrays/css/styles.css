@@ -39,10 +39,11 @@ body,
 #bigBox {
     background-color: var(--Col0);
     color: var(--Col);
-    flex-direction: row;
+    flex-direction: column;
 }
 
 #assBox {
+    justify-content: space-between;
     background-color: var(--Col1);
     color: var(--Col2);
 }
@@ -59,7 +60,7 @@ div {
 
 .ass 
 .cha {
-    justify-items: space-between;
+    align-content: space-between;
     flex-direction: row;
     padding: .333rem;
 }

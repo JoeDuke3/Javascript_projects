@@ -44,7 +44,15 @@ function drumList() {
 // document.getElementById().innerHTML method 
 // to display a value (or values) of your array.
 
-
+function powersOf3() {
+    var exponent = [];
+    exponent[0] = 1;
+    exponent[1] = 3;
+    exponent[2] = 9;
+    exponent[3] = 27;
+    document.getElementById("3Cubed")
+    .innerHTML = "3 to power of 3 is " + exponent[3] + ".";
+}
 
 // 4TH ASSIGNMENT
 // Create an object through utilization of the const keyword.
