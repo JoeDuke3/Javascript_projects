@@ -10,13 +10,57 @@
 /* "MY" COLORS */
 
 * {
-    --priCol: #001730;
-    --secCol: #4ad7d1;
-    --hiCol: #fe4a49;
+    --bgCol: #333;
+    --Col: #fed;
+    --Col0: #001730;
+    --Col1: #4ad7d1;
+    --Col2: #fe4a49;
 }
 
 body {
-    background-color: #333;
-    color: #fed;
-    padding: 1.44rem;
+
+    padding: 3.33rem;
 }
+
+body, 
+.ass,
+.cha  {
+    background-color: var(--bgCol);
+    color: var(--Col);
+}
+
+#bigBox,
+#assBox, 
+#chaBox,
+.ass
+.cha {
+    display: flex;
+    flex-wrap: wrap;
+    border: thick solid black;
+    padding: 1rem;
+}
+
+#bigBox {
+    background-color: var(--Col0);
+    color: var(--Col);
+    flex-direction: row;
+}
+
+#assBox {
+    background-color: var(--Col1);
+    color: var(--Col2);
+}
+
+#chaBox {
+    background-color: var(--Col2);
+    color: var(--Col1);
+}
+
+.ass 
+.cha {
+    flex-direction: row;
+}
+
+h1, h2, h2 {margin: .3rem}
+
+h3 {display: block}

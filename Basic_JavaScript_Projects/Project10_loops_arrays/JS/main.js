@@ -1,7 +1,16 @@
-// 1ST ASSIGNMENTS
+// 1ST ASSIGNMENT
 // Create a while loop.
-
-
+// THIS FUNCTION DISPLAYS A NEW LINE THAT ADDS
+// 3 TO THE PREVIOUS LINE
+    function Call_Loop() {
+        var n = "";
+        var c = 0;
+        while (c < 12) {
+            n += c * 3 + "<br>";
+            c++;
+        }
+        document.getElementById("Loop").innerHTML = n;
+    }
 
 // 1ST CHALLENGE
 // Use the JavaScript string length property.
