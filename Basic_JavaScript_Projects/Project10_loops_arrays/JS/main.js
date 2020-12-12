@@ -104,6 +104,8 @@ document.getElementById("global")
 .innerHTML = F * B;
 
 
+
+
 // 2ND CHALLENGE
 // Use the JavaScript return statement.
 
@@ -117,12 +119,21 @@ function displayGross() {
     .innerHTML = (makeGross());
 }
 
-
 // 6TH ASSIGNMENT
+
 // Create an object using the let keyword. 
 // Ensure your object includes properties and a method.
 
-
+let Motorcycle = {
+    make: "Honda ",
+    model: "CR500R ",
+    year: "1995 ",
+    color: "red/white ",
+    description : function() {
+        return "The Motorcycle is a " + this.color + this.year + this.make + this.model;
+    }
+};
+document.getElementById("Motorcycle_Object").innerHTML = Motorcycle.description();
 
 // 3RD CHALLENGE
 // Define and learn how to utilize the break statement.
