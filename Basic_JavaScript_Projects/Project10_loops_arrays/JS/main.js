@@ -1,43 +1,51 @@
 // Minimum project requirements:
+// Write a function that utilizes a while loop
 // 1ST ASSIGNMENT
 // Create a while loop.
-// THIS FUNCTION DISPLAYS A NEW LINE THAT ADDS
-// 3 TO THE PREVIOUS LINE
-function Call_Loop() {
-    var n = "";
-    var c = 0;
-    while (c < 12) {
-        n += c * 3 + "<br>";
-        c++;
+                                                            // 
+function Call_Loop() {                                      // Declare a function
+    var n = "";                                             // Assign a variable
+    var c = 0;                                              // Assign a variable
+    while (c < 12) {                                        // Create a while loop
+        n += c * 3 + "<br>";                                // Reassign a variable
+        c++;                                                // Iterate a variable
     }
-    document.getElementById("Loop").innerHTML = n;
+    document.getElementById("Loop")                         // Reference an element by using it's ID
+    .innerHTML = n;                                         // Give value to referenced element.
 }
 
 // 1ST CHALLENGE
 // Use the JavaScript string length property.
-function getLength() {
-    document.getElementById("ID1")
-    .innerHTML = "One is  " + "wn".length;
-    document.getElementById("ID2")
-    .innerHTML = "Two is " + "toow".length;
-    document.getElementById("ID3")
-    .innerHTML = "Three is " + "threey".length;
+function getLength() {                                      // Declare a function
+    document.getElementById("ID1")                          // Reference an element by using it's ID
+    .innerHTML = "One is  " + "wn".length;                  // Give value to referenced element.
+    document.getElementById("ID2")                          // Reference an element by using it's ID
+    .innerHTML = "Two is " + "toow".length;                 // Give value to referenced element.
+    document.getElementById("ID3")                          // // Reference an element by using it's ID
+    .innerHTML = "Three is " + "threey".length;             // Give value to referenced element.
 }
 
+// Minimum project requirements:
+// Write a function that utilizes a for loop
 // 2ND ASSIGNMENT
 // Write a for loop
 
-var Drums = ["Kick", "Snare", "Rack-Tom", "Floor-Tom", "Timpani", "Kettle", "Steel", "Bongo", "Oil", "Brake", "Ear"];
-var Kit = "";
-var D;
+var Drums = ["Kick", "Snare", "Rack-Tom",                   // Assign an array
+"Floor-Tom", "Timpani", "Kettle", "Steel", 
+"Bongo", "Oil", "Brake", "Ear"];
+var Kit = "";                                               // Assign a variable
+var D;                                                      // Assign a variable
 
-function drumList() {
-    for(D = 0; D < Drums.length; D++) {
-        Kit += Drums[D] + "<br>";
+function drumList() {                                       // Declare a function
+    for(D = 0; D < Drums.length; D++) {                     // Create a for loop
+        Kit += Drums[D] + "<br>";                           // Reassign a variable
     }
-    document.getElementById("DrumKit").innerHTML = Kit;
+    document.getElementById("DrumKit")                      // Reference an element by using it's ID
+    .innerHTML = Kit;                                       // Give value to referenced element.
 }
 
+// Minimum project requirements:
+// Write a function that utilizes an array
 // 3RD ASSIGNMENT
 // Write an array within a function to be called.
 
@@ -45,14 +53,14 @@ function drumList() {
 // document.getElementById().innerHTML method 
 // to display a value (or values) of your array.
 
-function powersOf3() {
-    var exponent = [];
-    exponent[0] = 1;
-    exponent[1] = 3;
-    exponent[2] = 9;
-    exponent[3] = 27;
-    document.getElementById("3Cubed")
-    .innerHTML = "3 to power of 3 is " + exponent[3] + 
+function powersOf3() {                                      // Declare a function
+    var exponent = [];                                      // Assign an array
+    exponent[0] = 1;                                        // Add an element to an array
+    exponent[1] = 3;                                        // Add an element to an array
+    exponent[2] = 9;                                        // Add an element to an array
+    exponent[3] = 27;                                       // Add an element to an array
+    document.getElementById("3Cubed")                       // Reference an element by using it's ID
+    .innerHTML = "3 to power of 3 is " + exponent[3] +      // Give value to referenced element.
     ".";
 }
 
@@ -85,24 +93,24 @@ function powersOf3() {
 // document.getElementById("Constant").innerHTML method.
 
 
-
-
+// Minimum project requirements:
+// Create an object using the “let” keyword
 // 5TH ASSIGNMENT
 // Utilize the let keyword
-let F = 3;
-let B = 5;
+let F = 3;                                                  // Assign an variable
+let B = 5;                                                  // Assign an variable
 
-function letItBe() {
-    let F = 4;
-    let B = 6;
-    return F * B;
+function letItBe() {                                        // Declare a function
+    let F = 4;                                              // Assign an variable
+    let B = 6;                                              // Assign an variable
+    return F * B;                                           // Use a return statement
 }
 
-document.getElementById("block")
-.innerHTML = letItBe();
+document.getElementById("block")                            // Reference an element by using it's ID
+.innerHTML = letItBe();                                     // Give value to referenced element.
 
-document.getElementById("global")
-.innerHTML = F * B;
+document.getElementById("global")                           // Reference an element by using it's ID
+.innerHTML = F * B;                                         // Give value to referenced element.
 
 
 
@@ -110,14 +118,14 @@ document.getElementById("global")
 // 2ND CHALLENGE
 // Use the JavaScript return statement.
 
-function makeGross() {
-    let G = 12 ** 2;
-    return G;
+function makeGross() {                                      // Declare a function
+    let G = 12 ** 2;                                        // Assign a variable
+    return G;                                               // Use a return statement
 }
 
-function displayGross() {
-    document.getElementById("gross")
-    .innerHTML = (makeGross());
+function displayGross() {                                   // Declare a function
+    document.getElementById("gross")                        // Reference an element by using it's ID
+    .innerHTML = (makeGross());                             // Give value to referenced element.
 }
 
 // 6TH ASSIGNMENT
@@ -125,16 +133,17 @@ function displayGross() {
 // Create an object using the let keyword. 
 // Ensure your object includes properties and a method.
 
-let Motorcycle = {
-    make: "Honda ",
-    model: "CR500R ",
-    year: "1995 ",
-    color: "red/white ",
-    description : function() {
+let Motorcycle = {                                          // Create an object
+    make: "Honda ",                                         // Add a value to an object
+    model: "CR500R ",                                       // Add a value to an object
+    year: "1995 ",                                          // Add a value to an object
+    color: "red/white ",                                    // Add a value to an object
+    description : function() {                              // Declare a function
         return "The Motorcycle is a " + this.color + this.year + this.make + this.model;
-    }
+    }                                                       // Use a return statement (previous line)
 };
-document.getElementById("Motorcycle_Object").innerHTML = Motorcycle.description();
+document.getElementById("Motorcycle_Object")                // Reference an element by using it's ID
+.innerHTML = Motorcycle.description();                      // Give value to referenced element.
 
 // 3RD CHALLENGE
 
@@ -143,16 +152,17 @@ document.getElementById("Motorcycle_Object").innerHTML = Motorcycle.description(
 
 // Write a loop that includes at least one break statement.
 
-var j = 0;
+var j = 0;                                                  // Assign a variable
 
-function takeFive() {
-        while (j < 10) {
-        if (j === 5) {
-            break;
+function takeFive() {                                       // Declare a function
+        while (j < 10) {                                    // Create a while loop
+        if (j === 5) {                                      // Use an if statement
+            break;                                          // Use a break statement
         }
-        j = j + 1;
+        j = j + 1;                                          // Reassign a variable
     }
-    document.getElementById("take").innerHTML = j;
+    document.getElementById("take")                         // Reference an element by using it's ID
+    .innerHTML = j;                                         // Give value to referenced element.
 }
 
 
@@ -163,29 +173,15 @@ function takeFive() {
 
 // Write a loop that includes at least one continue statement.
 
-let l = '';
+let l = '';                                                 // Assign a variable
 
-function leaveOne() {
-    for (let k = 0; k < 10; k++) {
-        if (k === 1) {
-            continue;
+function leaveOne() {                                       // Declare a function
+    for (let k = 0; k < 10; k++) {                          // Create a for loop
+        if (k === 1) {                                      // Use an if statement
+            continue;                                       // Use a return statement
         }
-        l = l + k;
+        l = l + k;                                          // Reassign a variable
     }
-    document.getElementById("leave").innerHTML = l;
+    document.getElementById("leave")                        // Reference an element by using it's ID
+    .innerHTML = l;                                         // Give value to referenced element.
 }
-
-// ASSIGNMMENT SUBMISSION
-// Minimum project requirements:
-// Write a function that utilizes a while loop
-
-// Write a function that utilizes a for loop
-
-// Write a function that utilizes an array
-
-// Create an object using the “let” keyword
-
-// Add comments throughout your JavaScript explaining your code
-
-// Submit Page 205
-
