@@ -1,3 +1,4 @@
+// Minimum project requirements:
 // 1ST ASSIGNMENT
 // Create a while loop.
 // THIS FUNCTION DISPLAYS A NEW LINE THAT ADDS
@@ -136,19 +137,46 @@ let Motorcycle = {
 document.getElementById("Motorcycle_Object").innerHTML = Motorcycle.description();
 
 // 3RD CHALLENGE
+
 // Define and learn how to utilize the break statement.
+// THE BREAK STATEMENT EXITS A SWITCH STATEMENT OR A LOOP.
 
 // Write a loop that includes at least one break statement.
 
+var j = 0;
+
+function takeFive() {
+        while (j < 10) {
+        if (j === 5) {
+            break;
+        }
+        j = j + 1;
+    }
+    document.getElementById("take").innerHTML = j;
+}
+
+
 // Define and learn how to utilize the continue statement.
+// THE CONTINUE STATEMENT BREAKS ONE ITERATION IN THE LOOP
+// IF A SPECIFIED CONDITION OCCURS, AND CONTINUES
+// WITH THE NEXT ITERATION IN THE LOOP.
 
 // Write a loop that includes at least one continue statement.
 
+let l = '';
 
+function leaveOne() {
+    for (let k = 0; k < 10; k++) {
+        if (k === 1) {
+            continue;
+        }
+        l = l + k;
+    }
+    document.getElementById("leave").innerHTML = l;
+}
 
 // ASSIGNMMENT SUBMISSION
 // Minimum project requirements:
-
 // Write a function that utilizes a while loop
 
 // Write a function that utilizes a for loop
