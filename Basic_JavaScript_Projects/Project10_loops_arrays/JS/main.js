@@ -71,16 +71,19 @@ function powersOf3() {                                      // Declare a functio
 // display a string using 'getId"Constant" that includes
 // a property value(s) of the object.
 
-// const sideArm = {brand="Remington", type="1911", color="black", status="not loaded"};
-// function backUpPlan() {
-//     document.getElementById("pistol").innerHTML = "My Plan B is my " + sideArm.color + sideArm.brand + sideArm.type + ",don't worry, it's " + sideArm.status + ".";
-// }
+const sideArm = {brand:"Remington", type:"1911", color:"black", status:"not loaded"};
+function backUpPlan() {
+    if (sideArm.status = "loaded"); {
+        sideArm.status = "not loaded";
+    }
+    document.getElementById("pistol").innerHTML = "My Plan B is my <br>" + sideArm.color + " " + sideArm.brand + " " + sideArm.type + ", <br>don't worry, it's " + sideArm.status + ".";
+}
 
-// function update() {
-//     sideArm.capacity = "9 rounds";
-//     sideArm.status = "loaded";
-//     document.getElementById("pistol").innerHTML = "Now it is " + sideArm.status + "with" + sideArm.capacity + "...";
-// }
+function update() {
+    sideArm.capacity = "9 rounds";
+    sideArm.status = "loaded";
+    document.getElementById("pistol").innerHTML = "Now it is " + sideArm.status + " with " + sideArm.capacity + "...";
+}
 
 
 // Change a property's value
