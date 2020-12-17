@@ -10,30 +10,30 @@
     </script>
     <title>Pizza Drill Demo</title>
 </head>
-    <body>
-        <div id="menuBG">
-            <h1 style="margin: 0 0px 0 20px;">Pizza Drill Tutorial</h1>
-            <input type="button" id="btnOrder" onclick="getReceipt()" value="Place Order">
-            <form id="frmMenu">
-                <div class="menu left">
-                    <h3>Size:</h3>
-                    <input type="radio" class="size" name="Size" value="Personal Pizza">Personal Pizza<br>
-                    <input type="radio" class="size" name="Size" value="Medium Pizza">Medium Pizza<br>
-                    <input type="radio" class="size" name="Size" value="Large Pizza">Large Pizza<br>
-                    <input type="radio" class="size" name="Size" value="Extra Large Pizza">Extra Large Pizza<br>
+    <body>    <!-- GREY BACKGROUND -->
+        <div id="menuBG">       <!-- GREEN BACKGROUND -->
+            <h1 style="margin: 0 0px 0 20px;">PLACE YOUR PIZZA ORDER</h1>       <!-- MENU HEADING -->
+            <input type="button" id="btnOrder" onclick="getReceipt()" value="Place Order">      <!-- SUBMIT BUTTON -->
+            <form id="frmMenu"> 
+                <div class="menu left">                                                                                 <!--SIZE MENU -->
+                    <h3>Size:</h3>                                                                                      <!--SIZE MENU -->
+                    <input type="radio" class="size" name="Size" value="Personal Pizza">Personal Pizza<br>              <!--SIZE MENU -->
+                    <input type="radio" class="size" name="Size" value="Medium Pizza">Medium Pizza<br>                  <!--SIZE MENU -->
+                    <input type="radio" class="size" name="Size" value="Large Pizza">Large Pizza<br>                    <!--SIZE MENU -->
+                    <input type="radio" class="size" name="Size" value="Extra Large Pizza">Extra Large Pizza<br>        <!--SIZE MENU -->
                 </div>
-                <div class="menu right">
-                    <h3>Meats:</h3>
-                    <input type="checkbox" class="toppings" name="Toppings" value="Pepperoni">Pepperoni<br>
-                    <input type="checkbox" class="toppings" name="Toppings" value="Sausage">Sausage<br>
-                    <input type="checkbox" class="toppings" name="Toppings" value="Canadian Bacon">Canadian Bacon<br>
-                    <input type="checkbox" class="toppings" name="Toppings" value="Ground Beef">Ground Beef<br>
-                    <input type="checkbox" class="toppings" name="Toppings" value="Anchovy">Anchovy<br>
-                    <input type="checkbox" class="toppings" name="Toppings" value="Chicken">Chicken<br>
+                <div class="menu right">                                                                                <!--TOPPINGS MENU -->
+                    <h3>Meats:</h3>                                                                                     <!--TOPPINGS MENU -->
+                    <input type="checkbox" class="toppings" name="Toppings" value="Pepperoni">Pepperoni<br>             <!--TOPPINGS MENU -->
+                    <input type="checkbox" class="toppings" name="Toppings" value="Sausage">Sausage<br>                 <!--TOPPINGS MENU -->
+                    <input type="checkbox" class="toppings" name="Toppings" value="Canadian Bacon">Canadian Bacon<br>   <!--TOPPINGS MENU -->
+                    <input type="checkbox" class="toppings" name="Toppings" value="Ground Beef">Ground Beef<br>         <!--TOPPINGS MENU -->
+                    <input type="checkbox" class="toppings" name="Toppings" value="Anchovy">Anchovy<br>                 <!--TOPPINGS MENU -->
+                    <input type="checkbox" class="toppings" name="Toppings" value="Chicken">Chicken<br>                 <!--TOPPINGS MENU -->
                 </div>
-                <div id="cart">
-                    <div id="showText"></div>
-                    <div id="totalPrice"></div>
+                <div id="cart">                     <!-- TOTALS -->
+                <div id="showText"></div>           <!-- ORDER -->
+                    <div id="totalPrice"></div>     <!-- COST -->
                 </div>
             </form>
         </div>
