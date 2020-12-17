@@ -1,7 +1,37 @@
+
+body {
+    background-color: gray;
+}
+
+div {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ccc;
+}
+
+h1, h3 {
+    color: #b00;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1 {
+    text-shadow: 2px 2px 0px rgba(0,0,0,.6)
+}
+
+h3 {
+    
+    text-shadow: 1px 1px 0px rgba(0,0,0,.3)
+}
+
 #menuBG {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-content: space-between; */
     width: 400px;
     height: 470px;
+    background-color: #060;
     margin: 10px auto;
+    padding: 1.44rem;
 }
 
 #frmMenu {
@@ -44,6 +74,7 @@
 
 #btnOrder {
     margin: 10px 0px 0px 100px;
-    width: 100px;
-    height: 40px
+    width: 144px;
+    height: 40px;
+    box-shadow: 3px 3px 0px rgba(0,0,0,.6)
 }
