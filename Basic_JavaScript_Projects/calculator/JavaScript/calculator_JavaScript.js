@@ -18,7 +18,7 @@ function Input_Digit(digit) {
     // Display_Value to the key that was clicked
     if (Wait_Second_Operand === true) {
         Calculator.Display_Value = digit;
-        Calculator.Wait_Second_operand = false;
+        Calculator.Wait_Second_Operand = false;
     } else {
     // this overwrites Display_Value it the current value is 0
     // otherwise it adds onto it 
