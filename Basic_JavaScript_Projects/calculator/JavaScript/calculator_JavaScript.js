@@ -34,7 +34,7 @@ function Input_Decimal(dot) {
     if (!Calculator.Display_Value.includes(dot)) {
     // we are saying that if the Display_Value does not contain a 
     // decimal point we want to add a decimal point
-        Calculator.Disply_Value += dot;
+        Calculator.Display_Value += dot;
     }
 }
 
@@ -47,7 +47,7 @@ function Handle_Operator(Next_Operator) {
     const Value_of_Input = parseFloat(Display_Value);
     // checks if an operator already exists and if Wait_Second_Operand 
     // is true, then updates the operator and exits from the function
-    if (operator && Calculator.Wait_Second_Operand) {
+    if (operator && Calculator.Wait_Second_Operator) {
         Calculator.operator = Next_Operator;
         return;
     }
