@@ -1,6 +1,5 @@
 html {
-    height: 100%;
-    font-family: "Avenir Next", Helvitica, sans-serif;
+    font-family: "Avenir Next", Helvetica, sans-serif;
     text-align: center;
 }
 
@@ -28,23 +27,6 @@ li {
     margin: 0;
 }
 
-/* CHALLENGE 2 */
-/* center the UI element that presents your todo entry point and task list */
-
-#add {
-    align-self: center;
-}
-
-/* CHALLENGE 2 */
-/* make the element that contains your footer information have a border and stick the footer to the bottom of the page */
-
-body {
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: 1fr auto;
-}
-
-.footBox {
-    grid-row-start: 2;
-    grid-row-end: 3;
+.remove {
+    padding-bottom: 5px;
 }
