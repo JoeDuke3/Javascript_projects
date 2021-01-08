@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Shadows+Into+Light&family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <title>Joe Duke Portfolio</title>
+    </head>
+
+    <body class="Background">
+
+        <!-- NAVBAR -->
+        <div class="Navbar">
+            <a href="#Home">Home</a>
+            <a href="#Slideshow">Slideshow</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
+        </div>
+
+        <!-- BACKGROUND VIDEO -->
+        <div id="Home">
+            <video autoplay muted loop id="Spotlights_Video"> <!-- (#Typing_Video) -->
+                <source src="./images/video/spotlights.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!-- VIDEO TEXT -->
+        <div class="video_text"> <!-- (.Video_Text) -->
+        <!-- INTRO -->
+            <h1 class="greeting"> <!-- (.white-text) -->
+                My name is JD. <br>
+                Welcome to my portfolio website. <br>
+                On it, I will tell you about
+                my background and experience.
+                <br><br>
+                Thank you for stopping by and 
+                I hope to work with you soon.
+            </h1>
+            <!-- QUOTE -->
+            <strong>
+                <p class="gonzo"> <!-- (.center) -->
+                    <q>
+                        The music business is a 
+                        cruel and shallow money trench, <br>
+                        a long plastic hallway 
+                        where thieves and pimps run free, 
+                        and good men die like dogs... <br>
+                        There's also a negative side.
+                    </q>
+                        <br><br>
+                        -Hunter S. Thompson
+                </p>
+            </strong>
+        </div>
+
+        <!-- SLIDESHOW SECTION -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <!-- SLIDE 1 OF 6 -->
+                    <div class="mySlides fade">
+                        <img class="slideshowImages" src="./images/myPicture2.jpg" alt="JD's Self Portrait">
+                        <div class="text">
+                            I'm available to assist you on your project!
+                        </div>
+                    </div>
+                    <!-- SLIDE 2 OF 6 -->
+                    <div class="mySlides fade">
+                        <img class="slideshowImages" src="./images/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS and JS logos"> <!-- (.Slideshow_Images) -->
+                        <div class="text">
+                            I am a full_stack software developer, <br>trained in: <br>HTML, CSS, JavaScript,
+                        </div>
+                    </div>
+                    <!-- SLIDE 3 OF 6 -->
+                    <div class="mySlides fade">
+                        <img class="slideshowImages" src="./images/Python.png" alt="Python logo">
+                        <div class="text">
+                            the popular programming language Python,
+                        </div>
+                    </div>
+                    <!-- SLIDE 4 OF 6 -->
+                    <div class="mySlides fade">
+                        <img class="slideshowImages" src="./images/C_Sharp_and_Dot_NET.png" alt="C# logo">
+                        <div class="text">C#, .NET 
+                            Framework, ASP.NET, MVC, 
+                        </div>
+                    </div>
+                    <!-- SLIDE 5 OF 6 -->
+                    <div class="mySlides fade">
+                        <img class="slideshowImages" src="./images/SQL_and_Database.jpg" alt="SQL logo">
+                        <div class="text">back end development, databases and SQL.</div>
+                    </div>
+                    <!-- SLIDE 6 OF 6 -->
+                    <div class="mySlides fade">
+                        <img class="slideshowImages" src="./images/contactMe.jpg" alt="Picture of someone at their desk using a cellular phone">
+                        <div class="text"><a class="whiteText" onclick="openForm()" href="#Contact">Contact me now!</a> <!-- (white-text) -->
+                        </div>
+                    </div>
+                    <!-- PREVIOUS AND NEXT BUTTONS -->
+                    <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- SLIDESHOW DOTS -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ABOUT SECTION -->
+        <div class="row" id="About"> <!-- (.Row) -->
+            <!-- LEFT COLUMN -->
+            <div class="column2"> <!-- (.Column_2) -->
+                <img src="images/myOffice.jpg" alt="View of a stage">
+            </div>
+            <!-- RIGHT COLUMN -->
+            <div class="column1"> <!-- (.Column_1) -->
+                <h1>About</h1>
+                <p>
+                    In the old normal I designed, programmed, and operated light shows while crew chiefing and managing the stage for rock concerts. When it became illegal to have fun I had to find something else to do. Now I develop websites and software.
+                </p>
+                <br><br>
+                <p>
+                    I am enrolled in <a href="https://www.learncodinganywhere.com" target="blank">
+                        The Tech Academy</a>
+                    's Software Developer Boot Camp, and gaining experience in the following web and programming languages: HTML, CSS, JavaScript, Python, MySQL, C#, .NET and more.
+                    <br><br>
+                </p>
+            </div>
+        </div>
+
+        <!-- GITHUB SECTION -->
+        <div class="row" id="GitHub">
+        <!-- LEFT COLUMN -->
+            <div class="column1">
+                <h1 class="github">
+                    GitHub
+                </h1>
+                <h2 class="github">
+                    You can view my code on my GitHub profile here:
+                </h2>
+                <h2 class="github">
+                    <a href="https://github.com/JoeDuke3" target="blank">Joe Duke GitHub</a>
+                </h2>
+            </div>
+            <!-- RIGHT COLUMN -->
+            <div class="column2">
+                <a href="https://github.com/JoeDuke3" target="blank">
+                    <img src="./images/GitHubLogo.png" alt="GitHub logo">
+                </a>
+            </div>
+        </div>
+
+        <!-- LINKEDIN SECTION -->
+        <div class="row" id="LinkedIn">
+        <!-- LEFT COLUMN -->
+            <div class="column2">
+                <a href="https://linkedin.com/in/joe-duke-a29a0a1b9/" target="blank">
+                    <img src="./images/LI-Logo.png" alt="Linkedin logo">
+                </a>
+            </div>
+            <!-- RIGHT COLUMN -->
+            <div class="column1">
+                <h1 class="linkedin">
+                    Linkedin
+                </h1>
+                <h2 class="linkedin">
+                    You can view my Linkedin profile here:
+                </h2>
+                <h2 class="linkedin">
+                    <a href="https://linkedin.com/in/joe-duke-a29a0a1b9/" target="blank">Joe Duke Linkedin</a>
+                </h2>
+            </div>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <div id="Contact">
+            <button onclick="openForm()" class="popUpButton">CONTACT</button> <!-- (.Pop_Up_Button) -->
+            <div class="formPopup" id="myForm"> <!-- (.form-popup) -->
+                <form action="https://formspree.io/..." class="formBox" method="POST"> <!-- (form-container) -->
+                    <h1>Contact</h1>
+                    <label for="name"><b>Name</b></label>
+                        <input type="text" placeholder="Type your name here" name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                        <input type="text" placeholder="Type your phone number here" name="phone" required>
+                    <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Type your email address here" name="email" required>
+                    <label for="message"><b>Message</b></label>
+                    <input type="text" placeholder="Type your message here" name="message">
+
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- FOOTER SECTION -->
+        <footer>
+            <p class="center">
+                &copy;JoeDuke Enterprises, LLC
+            </p>
+            <br>
+        </footer>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
